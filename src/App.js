@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import {useEffect, useState} from "react";
 import './App.css';
+import Like from "./components/Like/Like";
+import Share from "./components/Share/Share";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Like name="Vignesh"/>
+      <Share name="Utkarsh"/>
     </div>
   );
 }
 
 export default App;
+
